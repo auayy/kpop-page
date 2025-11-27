@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latin POP Snapshot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ['"Pretendard"', '"Noto Sans KR"', "ui-sans-serif", "system-ui"] },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-sky-900 px-4 py-12 font-sans">
+    <nav
+      class="mx-auto mb-8 flex w-full max-w-5xl flex-wrap items-center justify-between gap-4 rounded-full border border-white/10 bg-white/10 px-6 py-4 text-xs uppercase tracking-[0.25em] text-slate-100 shadow-lg shadow-slate-900/30 backdrop-blur"
+    >
+      <span class="text-sm font-semibold tracking-[0.4em] text-sky-200">Global Pop Atlas</span>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="index.html" class="text-slate-200 hover:text-white transition">K-POP</a>
+        <span class="h-4 w-px bg-slate-400/60"></span>
+        <a href="us-pop.html" class="text-slate-200 hover:text-white transition">미국 팝</a>
+        <a href="uk-pop.html" class="text-slate-200 hover:text-white transition">영국 팝</a>
+        <a href="jp-pop.html" class="text-slate-200 hover:text-white transition">일본 팝</a>
+        <a href="latin-pop.html" class="text-white" aria-current="page">라틴 팝</a>
+      </div>
+      <a
+        href="#"
+        class="inline-flex items-center gap-2 rounded-full border border-slate-100/40 px-4 py-2 text-[0.65rem] font-semibold tracking-[0.2em] text-white transition hover:border-white"
+      >
+        Explore
+        <span aria-hidden="true">↗</span>
+      </a>
+    </nav>
+    <article class="relative mx-auto w-full max-w-4xl overflow-hidden rounded-3xl bg-white/90 px-8 py-10 shadow-2xl shadow-slate-900/50 ring-1 ring-white/30 backdrop-blur">
+      <div class="pointer-events-none absolute inset-0 opacity-60">
+        <div class="absolute -top-12 right-4 h-48 w-48 rounded-full bg-sky-400 blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 h-44 w-44 rounded-full bg-amber-300 blur-3xl"></div>
+      </div>
+      <div class="relative space-y-8 text-slate-900">
+        <span class="inline-flex items-center gap-2 rounded-full bg-amber-100 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-amber-600">
+          Latin POP Insight
+        </span>
+        <header>
+          <h1 class="text-4xl font-bold leading-snug text-slate-900 sm:text-5xl">
+            리듬과 감성이 폭발하는 라틴 팝의 열정
+          </h1>
+          <p class="mt-5 text-lg text-slate-600">
+            라틴 팝은 살사·레게톤·바차타·트로피컬 하우스 등이 만나는 장르입니다. 스페인어·포르투갈어 가사와
+            감성적인 멜로디, 댄스 문화가 어우러져 전 세계 팬을 사로잡습니다.
+          </p>
+        </header>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-sky-500/30">
+            레게톤 비트
+          </span>
+          <span class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-lg shadow-slate-300/60">
+            스페인어 감성
+          </span>
+          <span class="rounded-full bg-amber-100 px-4 py-2 text-sm font-semibold text-amber-700">
+            페스티벌 & 댄스
+          </span>
+        </div>
+
+        <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl bg-white/70 p-5 shadow-lg shadow-blue-900/10 ring-1 ring-slate-200">
+            <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-500">1990s → Global</h3>
+            <p class="mt-3 text-slate-700">샤키라와 리키 마틴 이후 레게톤·트랩 라티노가 글로벌 차트를 석권.</p>
+          </article>
+          <article class="rounded-2xl bg-gradient-to-br from-cyan-500 to-teal-700 p-5 text-white shadow-xl shadow-cyan-900/30">
+            <h3 class="text-sm font-semibold uppercase tracking-wide text-white/80">사운드</h3>
+            <p class="mt-3 text-white">퍼커션과 베이스가 주도하는 드라이브감, 다채로운 리듬 전개가 특징입니다.</p>
+          </article>
+          <article class="rounded-2xl bg-white/70 p-5 shadow-lg shadow-blue-900/10 ring-1 ring-slate-200">
+            <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-500">문화</h3>
+            <p class="mt-3 text-slate-700">카니발, 거리 축제, 댄스 스튜디오가 음악과 삶을 밀접하게 연결합니다.</p>
+          </article>
+        </section>
+
+        <footer class="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-slate-900/90 px-6 py-4 text-white">
+          <div>
+            <p class="text-sm uppercase tracking-[0.3em] text-sky-300">Viva Rhythm</p>
+            <p class="text-lg font-semibold">레게톤·살사·트로피컬 하우스</p>
+          </div>
+          <a
+            href="https://en.wikipedia.org/wiki/Latin_pop"
+            target="_blank"
+            rel="noreferrer"
+            class="inline-flex items-center gap-2 rounded-full border border-white/30 px-5 py-2 text-sm font-semibold transition hover:border-white"
+          >
+            위키백과 더보기
+            <span aria-hidden="true">↗</span>
+          </a>
+        </footer>
+      </div>
+    </article>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latin Pop | Global Pop Atlas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+
+      body {
+        font-family: "Pretendard", "Noto Sans KR", system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 24px, 0);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .fade-in {
+        opacity: 0;
+        animation: fadeInUp 0.9s ease forwards;
+      }
+
+      .delay-1 {
+        animation-delay: 0.2s;
+      }
+
+      .delay-2 {
+        animation-delay: 0.4s;
+      }
+
+      .delay-3 {
+        animation-delay: 0.6s;
+      }
+
+      .delay-4 {
+        animation-delay: 0.8s;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900">
+    <header class="max-w-6xl mx-auto px-6 py-12 text-white fade-in" id="latin-pop">
+      <nav
+        class="mb-10 flex flex-wrap items-center justify-between gap-4 rounded-full border border-white/10 bg-white/5 px-6 py-4 text-sm text-slate-200 backdrop-blur"
+      >
+        <div class="text-lg font-semibold text-white tracking-wide">Global Pop Atlas</div>
+        <div class="flex flex-wrap items-center gap-4 text-xs uppercase tracking-[0.2em]">
+          <a href="index.html" class="transition hover:text-white">K-POP</a>
+          <a href="us-pop.html" class="transition hover:text-white">미국 팝</a>
+          <a href="uk-pop.html" class="transition hover:text-white">영국 팝</a>
+          <a href="jp-pop.html" class="transition hover:text-white">일본 팝</a>
+          <a href="latin-pop.html" class="text-white transition hover:text-white" aria-current="page">라틴 팝</a>
+        </div>
+        <a
+          href="#features"
+          class="inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-white transition hover:border-white"
+        >
+          Discover
+          <span aria-hidden="true" class="text-xs">↗</span>
+        </a>
+      </nav>
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center">
+        <div class="flex-1 fade-in delay-1">
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-300">LATIN POP CULTURE</p>
+          <h1 class="mt-3 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            리듬과 감성의 폭발<br />라틴 팝의 대륙적 매력
+          </h1>
+          <p class="mt-6 text-lg text-slate-200">
+            라틴 팝은 살사, 레게톤, 바차타, 트로피컬 하우스 등 라틴 아메리카 전통 리듬과 현대 팝 프로덕션이
+            만나는 장르입니다. 스페인어·포르투갈어 가사와 감성적인 멜로디가 전 세계 팬을 사로잡고 있습니다.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4 fade-in delay-2">
+            <a
+              href="#features"
+              class="inline-flex items-center gap-2 rounded-full bg-sky-500 px-6 py-3 text-white shadow-lg shadow-sky-500/30 transition hover:translate-y-0.5 hover:bg-sky-400"
+              >핵심 특징 보기
+              <span aria-hidden="true">→</span>
+            </a>
+            <a
+              href="#timeline"
+              class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-white/90 transition hover:border-white hover:text-white"
+              >연대표 살펴보기</a
+            >
+          </div>
+        </div>
+        <div class="flex-1 fade-in delay-2">
+          <div
+            class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sky-500/40 via-blue-500/30 to-transparent p-8 shadow-2xl shadow-blue-900/40 ring-1 ring-white/10"
+            id="timeline"
+          >
+            <div class="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-sky-400/30 blur-3xl"></div>
+            <div class="absolute bottom-4 left-4 h-16 w-16 rounded-full bg-cyan-400/40 blur-2xl"></div>
+            <p class="text-sm uppercase tracking-[0.5em] text-slate-200">TIMELINE</p>
+            <h2 class="mt-4 text-3xl font-semibold text-white">1990s · 2000s · Global Era</h2>
+            <p class="mt-4 text-slate-100/80">
+              루이스 미겔과 셀린 디온의 듀엣으로 상징되는 1990년대 크로스오버, 샤키라·리키 마틴이 이끈
+              2000년대, 그리고 레게톤과 트랩 라티노가 글로벌 차트를 석권한 현재까지 이어집니다.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4 text-sm text-slate-100">
+              <span class="rounded-full bg-white/10 px-4 py-2">레게톤</span>
+              <span class="rounded-full bg-white/10 px-4 py-2">스페인어 가사</span>
+              <span class="rounded-full bg-white/10 px-4 py-2">칼라풀 뮤직비디오</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-16 text-white fade-in delay-2" id="features">
+      <section class="rounded-3xl bg-white/5 p-10 shadow-2xl shadow-slate-900/40 ring-1 ring-white/10 backdrop-blur">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-center">
+          <div class="lg:w-1/2 space-y-4 fade-in delay-2">
+            <p class="text-sm uppercase tracking-[0.4em] text-sky-300">LATIN POP FEATURES</p>
+            <h3 class="text-3xl font-semibold">열정적인 리듬과 커뮤니티</h3>
+            <p class="text-slate-200">
+              라틴 팝은 리듬 섹션이 강조된 편곡과 감정 표현이 풍부한 보컬, 춤과 파티 문화가 중앙에 놓이는
+              것이 특징입니다.
+            </p>
+            <ul class="space-y-3 text-slate-100">
+              <li class="flex items-center gap-3">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sky-200"
+                  >1</span
+                >
+                퍼커션과 베이스가 주도하는 드라이브감
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sky-200"
+                  >2</span
+                >
+                스페인어·포르투갈어 서사와 로맨틱한 가사
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="inline-flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sky-200"
+                  >3</span
+                >
+                댄스·축제 문화를 중심으로 한 커뮤니티
+              </li>
+            </ul>
+          </div>
+          <div class="lg:w-1/2 grid grid-cols-1 gap-6 sm:grid-cols-2 fade-in delay-3">
+            <article class="rounded-2xl bg-slate-900/70 p-6 shadow-xl shadow-slate-900/50 ring-1 ring-white/10 fade-in">
+              <h4 class="text-xl font-semibold text-sky-200">역사</h4>
+              <p class="mt-3 text-slate-300 text-sm">
+                보사노바와 살사, 록 엔 에스파뇰, 라틴 팝 아이돌 등 지역별 장르가 세계 무대로 진출해 새로운
+                물결을 만들었습니다.
+              </p>
+            </article>
+            <article class="rounded-2xl bg-slate-900/70 p-6 shadow-xl shadow-slate-900/50 ring-1 ring-white/10 fade-in delay-1">
+              <h4 class="text-xl font-semibold text-sky-200">사운드</h4>
+              <p class="mt-3 text-slate-300 text-sm">
+                클라베 리듬과 레게톤 비트, 트랩 사운드가 공존하며 에너지 넘치는 사운드를 완성합니다.
+              </p>
+            </article>
+            <article class="rounded-2xl bg-slate-900/70 p-6 shadow-xl shadow-slate-900/50 ring-1 ring-white/10 fade-in delay-2">
+              <h4 class="text-xl font-semibold text-sky-200">문화</h4>
+              <p class="mt-3 text-slate-300 text-sm">
+                카니발, 거리 축제, 댄스 스튜디오와 연계되어 음악이 삶의 리듬과 긴밀하게 연결됩니다.
+              </p>
+            </article>
+            <article class="rounded-2xl bg-slate-900/70 p-6 shadow-xl shadow-slate-900/50 ring-1 ring-white/10 fade-in delay-3">
+              <h4 class="text-xl font-semibold text-sky-200">과제</h4>
+              <p class="mt-3 text-slate-300 text-sm">
+                지역 다양성을 유지하면서도 글로벌 시장에서 언어 장벽과 상업적 요구를 조율해야 하는 숙제가 있습니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/70 fade-in delay-4">
+      <div class="max-w-6xl mx-auto flex flex-col gap-4 px-6 py-8 text-center text-sm text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2025 Global Pop Atlas. All rights reserved.</p>
+        <div class="flex justify-center gap-4">
+          <a href="index.html" class="hover:text-white transition">K-POP 페이지</a>
+          <a href="#" class="hover:text-white transition">문의</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
